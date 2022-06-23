@@ -1,13 +1,11 @@
 const router = require("express").Router();
-const UserController = require("../controllers/userController");
-const IndexController = require("../controllers/Http/Payments/IndexController");
+const UserController = require("../controllers/user-controller");
 const authentication = require("../middlewares/authentication");
-const errorHandler = require("../middlewares/errorHandler");
-const { Op, where } = require("sequelize");
-const getPagination = require("../helpers/getPagination");
-const getPagingData = require("../helpers/getPagingData");
+const errorHandler = require("../middlewares/error-handler");
+const { Op } = require("sequelize");
+const getPagination = require("../helpers/get-pagination");
+const getPagingData = require("../helpers/get-pagingData");
 const { Product, User, Cart } = require("../models")
-const fetch = require("node-fetch");
 
 
 
