@@ -4,3 +4,6 @@ heroku config --app marazzo-by-nurma
 heroku config:set SECRET_KEY=iniSecret CLIENT_ID=769675518154-2l3kf8uclg9uphp4if2kolj9h3bn5u3t.apps.googleusercontent.com CLIENT-SECRET=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 --app marazzo-by-nurma
 
 heroku git:remote --app marazzo-by-nurma
+
+
+git push heroku feat-api:master

@@ -1,7 +1,7 @@
 const { User } = require("../models");
 const { compareHash } = require("../helpers/bcrypt");
 const { convertPayloadToToken } = require("../helpers/token");
-const verify = require("../helpers/OAuth2Client");
+const verify = require("../helpers/clientauth");
 
 class UserController {
   static async register(req, res, next) {
